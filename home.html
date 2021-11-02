@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Home - Hamptons Motorsports</title>
+	<link rel='stylesheet' href='HMS.css'>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script language = "javascript">
+          $(document).ready(function(){
+               $(".drop").hide();
+               $(".slide").hover(function(){
+                    $(".drop").show();
+                    setTimeOut(),500
+               },
+               function(){
+                    $(".drop").hide();
+               })
+               $(".drop").hover(function(){
+                    $(".drop").show();
+                    setTimeOut(),500
+               },
+               function(){
+                    $(".drop").hide();
+               })
+          })
+     </script>
+	<style type="text/css">
+          .welcome{background-image: url("Motorcross.png"); width: 100%; height: 500px; background-size: cover;}
+          .welcomeText{font-size: 50px; padding-top: 200px; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: rgb(255, 255, 255)}
+          h1{text-align: center; font-size: 50px}
+          a h1:hover{text-decoration: underline;}
+          .previews{text-align: center;}
+          .prevPic{max-height: 200px; max-width: 200px; border: 1px solid rgb(0, 0, 0);}
+	</style>
+</head>
+
+<body>
+<a href='home.html' class='logo'><img src="motorsports.png" width="20%;" style="max-height: 200px; top: 1px; margin-left: 50px;"></a>
+<a href='https://www.instagram.com/hamptonmotorsports/?hl=en' target="_blank"><img src="insta.jpg" width="3%;" style="max-height: 50px; max-width: 50px; top: 1px;"></a>
+<a href='https://www.facebook.com/hamptonmotorsports.southampton/' target="_blank"><img src="facebook.jpg" width="3%;" style="max-height: 50px; max-width: 50px; top: 1px;"></a>
+<a href='home.html'><img src="vespa.png" width="15%;" style="max-height: 140px; max-width: 140px; top: 1px; float: right; margin-right: 50px;"></a>
+<p style="margin-bottom: 40px;"></p>
+<div class='header' id = "myHeader">
+	<div class='headerlinks'>
+		<a class='headerLink' href='home.html'>Home</a>
+          <a class='headerLink' href='showroom.html'>Showroom</a>
+		<a class='headerLink slide' href='services.html'>Services<a class='headerLink drop' href='rental.html'>Rentals</a></a>
+          <a class='headerLink' href='aboutus.html'>About Us</a>
+          <a class='headerLink' href='information.html'>Info</a>
+		<a class='headerLink' href='contact.html'>Contact</a>
+	</div>
+</div>
+
+<div class="welcome">
+     <h1 class="welcomeText">Welcome to Hampton Motorsports!</h1>
+</div>
+
+<a href='showroom.html' style='color:rgb(0, 0, 0);'><h1>Preview</h1></a>
+<div class="previews" style= "margin-bottom: 75px;">
+     <a href='showroom.html'><img src="moto1.JPG" width="30%;" class="prevPic"></a>
+     <a href='showroom.html'><img src="moto2.JPG" width="30%;" class="prevPic"></a>
+     <a href='showroom.html'><img src="moto3.JPG" width="30%;" class="prevPic"></a>
+</div>
+
+<h1>Brands</h1>
+<div class="previews" style= "margin-bottom: 75px;">
+     <div>
+     <img src="vespa1.jpg" width="30%;" class="prevPic">
+     <img src="Piaggio.png" width="30%;" class="prevPic">
+     <img src="chicago.png" width="30%;" class="prevPic">
+     </div>
+     <div>
+     <img src="kymco.png" width="30%;" class="prevPic">
+     <img src="ssr.png" width="30%;" class="prevPic">
+     </div>
+</div>
+
+
+<div class='footer'>
+     <div class='footerlinks'>
+		<a class="footerLink" href='home.html'>Home</a>
+          <a class="footerLink" href='showroom.html'>Showroom</a>
+		<a class="footerLink"  href='services.html'>Services</a>
+          <a class="footerLink" href='rental.html'>Rentals</a>
+     </div>
+     <div class='footerlinks'>
+		<a class="footerLink" href='aboutus.html'>About Us</a>
+          <a class="footerLink" href='information.html'>Info</a>
+		<a class="footerLink" href='contact.html'>Contact</a>
+	</div>
+     <a href='home.html' class='logo'><img src="motorsports2.png" width="40%;" style="max-height: 250px; max-width: 250px; float: left; bottom: 0; margin-left: 10px;"></a>
+	<p style='float: right; margin-right: 10px; bottom: 0;'>938 Montauk Highway<br/>Water Mill, NY 11976<br/>Phone number: 631-287-6085</p>
+</div>
+</body>
+</html>

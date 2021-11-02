@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+    <link rel='stylesheet' href='HMS.css'>
+	<title>Services - Hamptons Motorsports</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script language = "javascript">
+          $(document).ready(function(){
+               $(".drop").hide();
+               $(".slide").hover(function(){
+                    $(".drop").show();
+                    setTimeOut(),500
+               },
+               function(){
+                    $(".drop").hide();
+               })
+               $(".drop").hover(function(){
+                    $(".drop").show();
+                    setTimeOut(),500
+               },
+               function(){
+                    $(".drop").hide();
+               })
+          })
+     </script>
+	<style type="text/css">
+          .center {
+               display: block;
+               margin-left: auto;
+               margin-right: auto;
+               width: 50%;
+               height: 400px;
+               width:900px;
+          }
+          #menu {
+               width: 50%;
+               padding: 12px 20px;
+          }
+    
+          form {
+               width: 100%;
+               display: inline-block;
+               text-align: center;
+          }
+
+          input, button { 
+               width: 70%;
+               padding: 12px 20px;
+               box-sizing: border-box;
+          }
+
+          .welcome{background-image: url("carfix.jpg"); width: 100%; height: 400px; background-size: cover;}
+          .welcomeText{font-size: 50px; padding-top: 150px; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; color: rgb(255, 255, 255); text-align: center;}
+	</style>
+</head>
+<body>
+     <a href='home.html' class='logo'><img src="motorsports.png" width="20%;" style="max-height: 200px; top: 1px; margin-left: 50px;"></a>
+     <a href='https://www.instagram.com/hamptonmotorsports/?hl=en' target="_blank"><img src="insta.jpg" width="3%;" style="max-height: 50px; max-width: 50px; top: 1px;"></a>
+     <a href='https://www.facebook.com/hamptonmotorsports.southampton/' target="_blank"><img src="facebook.jpg" width="3%;" style="max-height: 50px; max-width: 50px; top: 1px;"></a>
+     <a href='home.html'><img src="vespa.png" width="15%;" style="max-height: 140px; max-width: 140px; top: 1px; float: right; margin-right: 50px;"></a>
+     <p style="margin-bottom: 40px;"></p>
+     <div class='header' id = "myHeader">
+          <div class='headerlinks'>
+               <a class='headerLink' href='home.html'>Home</a>
+               <a class='headerLink' href='showroom.html'>Showroom</a>
+               <a class='headerLink slide' href='services.html'>Services<a class='headerLink drop' href='rental.html'>Rentals</a></a>
+               <a class='headerLink' href='aboutus.html'>About Us</a>
+               <a class='headerLink' href='information.html'>Info</a>
+               <a class='headerLink' href='contact.html'>Contact</a>
+          </div>
+     </div>
+<div class="welcome">
+    <h1 class="welcomeText">Services</h1>
+</div>
+<p style = "padding-right: 50px; padding-left:50px">
+    When you make the investment in a motorcycle, scooter, or other 
+    powersports vehicle, you want it to remain in great working 
+    order for years to come. You can count on both the knowledge 
+    and skill we provide. Our highly trained technicians are dedicated 
+    to maintaining and servicing your Vespa, Piaggio, Benelli, SSR, 
+    Genuine Scooter Company, Triton Trailers, Hyosung, Kymco, Apollo, 
+    Hammerhead Off-Road, Chicago Scooter Co., powersports, and E-Z-Go vehicles.
+    Here at Hampton Motorsports, you will get the most out of your purchase. 
+    We are powersports enthusiasts, after all, and know that keeping your 
+    vehicle in tip-top condition is a priority.
+    Hampton Motorsports is proud to offer state-of-the-art service. 
+    Our skilled technicians are factory-trained and certified and are among 
+    the best in New York, dedicated to providing you with timely, courteous, 
+    and expert assistance. We have the equipment and experience to get your 
+    vehicle in prime shape, whether you're cruising the highways, racing around 
+    the track, or tearing it up on the trail. We'll get you in and out of the 
+    shop in an efficient and timely manner so you can get back to the powersports 
+    activities you enjoy. Call us at (631) 287-6085. We got you.
+        </p>
+<div class="form-header"> 
+    <h2>Request Service</h2>     
+</div>
+<form name="contact" style="padding-bottom: 35px;">
+    <input type="text" id="fname" placeholder="First Name*"> <br>
+    <input type="text" id="lname" placeholder="Last Name*"> <br>
+    <input type="text" id="email" placeholder="Email*"> <br>
+    <input type="text" id="phone" placeholder="Phone*"> <br>
+    <input type="text" placeholder="Type of Service" style="padding: 20px 20px;"> <br>
+        <button type="button" id="button"> Submit </button>
+        
+    </form> 
+<div class='footer'>
+     <div class='footerlinks'>
+		<a class="footerLink" href='home.html'>Home</a>
+          <a class="footerLink" href='showroom.html'>Showroom</a>
+		<a class="footerLink"  href='services.html'>Services</a>
+          <a class="footerLink" href='rental.html'>Rentals</a>
+     </div>
+     <div class='footerlinks'>
+		<a class="footerLink" href='aboutus.html'>About Us</a>
+          <a class="footerLink" href='information.html'>Info</a>
+		<a class="footerLink" href='contact.html'>Contact</a>
+	</div>
+     <a href='home.html' class='logo'><img src="motorsports2.png" width="40%;" style="max-height: 250px; max-width: 250px; float: left; bottom: 0; margin-left: 10px;"></a>
+	<p style='float: right; margin-right: 10px; bottom: 0;'>938 Montauk Highway<br/>Water Mill, NY 11976<br/>Phone number: 631-287-6085</p>
+</div>
+    <script>
+    // verifies number
+    function verifyNumber()
+    {
+        var number = document.getElementById("phone").value;
+        var regex = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+        if (!regex.test(number)) {
+            alert("Phone number is invalid. Please use the form XXX-XXX-XXXX");
+            document.getElementById("phone").focus();
+            return false;
+        }
+        return true;
+    }
+
+    // verifies first name
+    function verifyFName()
+    {
+        var fname = document.getElementById("fname").value;
+        var regex = /^[a-zA-Z]+$/;
+        if (!regex.test(fname)) {
+            alert("First name is invalid. Please enter your first name");
+            document.getElementById("fname").focus();
+            return false;
+        }
+        return true;
+    }
+
+    // verifies first name
+    function verifyLName()
+    {
+        var lname = document.getElementById("lname").value;
+        var regex = /^[a-zA-Z]+$/;
+        if (!regex.test(lname)) {
+            alert("Last name is invalid. Please enter your last name");
+            document.getElementById("lname").focus();
+            return false;
+        }
+        return true;
+    }
+
+    // verifies email
+    function verifyEmail()
+    {
+        var email = document.getElementById("email").value;
+        var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (!regex.test(email)) {
+            alert("Email is invalid. Please enter your email");
+            document.getElementById("email").focus();
+            return false;
+        }
+        return true;
+    }
+
+    $("#button").click(function() {
+        arr = [];
+        arr.push(verifyFName(),verifyLName(), verifyEmail(), verifyNumber());
+        if (arr.indexOf(false) == -1) {
+            alert("Thank you for your form. We will be in touch with you soon.");
+            var form = document.getElementsByName("contact")[0];
+            form.reset();
+        }
+    });
+    </script>
+
+</body>
+</html>

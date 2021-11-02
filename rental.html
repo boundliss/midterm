@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+    <link rel='stylesheet' href='HMS.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script language = "javascript">
+          $(document).ready(function(){
+               $(".drop").hide();
+               $(".slide").hover(function(){
+                    $(".drop").show();
+                    setTimeOut(),500
+               },
+               function(){
+                    $(".drop").hide();
+               })
+               $(".drop").hover(function(){
+                    $(".drop").show();
+                    setTimeOut(),500
+               },
+               function(){
+                    $(".drop").hide();
+               })
+          })
+     </script>
+	<title>Rentals - Hamptons Motorsports</title>
+	<link rel='stylesheet' href='HMS.css'>
+	<style type="text/css">
+		form {
+    		width: 100%;
+          display: inline-block;
+          text-align: center;
+		}
+
+          input:not([type = 'radio']), button { 
+          width: 70%;
+          padding: 12px 20px;
+          box-sizing: border-box;
+          }
+          #btnSubmit {
+               background-color: black;
+               border: none;
+               color: white;
+               padding: 16px 32px;
+               text-decoration: none;
+               margin: 8px 4px;
+               width: 30%;
+          }
+          
+	</style>
+</head>
+<body>
+<a href='home.html' class='logo'><img src="motorsports.png" width="20%;" style="max-height: 200px; top: 1px; margin-left: 50px;"></a>
+<a href='https://www.instagram.com/hamptonmotorsports/?hl=en' target="_blank"><img src="insta.jpg" width="3%;" style="max-height: 50px; max-width: 50px; top: 1px;"></a>
+<a href='https://www.facebook.com/hamptonmotorsports.southampton/' target="_blank"><img src="facebook.jpg" width="3%;" style="max-height: 50px; max-width: 50px; top: 1px;"></a>
+<a href='home.html'><img src="vespa.png" width="15%;" style="max-height: 140px; max-width: 140px; top: 1px; float: right; margin-right: 50px;"></a>
+<p style="margin-bottom: 40px;"></p>
+<div class='header' id = "myHeader">
+     <div class='headerlinks'>
+          <a class='headerLink' href='home.html'>Home</a>
+          <a class='headerLink' href='showroom.html'>Showroom</a>
+          <a class='headerLink slide' href='services.html'>Services<a class='headerLink drop' href='rental.html'>Rentals</a></a>
+          <a class='headerLink' href='aboutus.html'>About Us</a>
+          <a class='headerLink' href='information.html'>Info</a>
+          <a class='headerLink' href='contact.html'>Contact</a>
+     </div>
+</div>
+<div style="text-align:center; padding-bottom: 35px;">
+<div class="form-header" style="padding-top: 10px;"> 
+    <h1>Golf Cart Rental Reservation Request</h1>     
+</div>
+<form id="rentals-form" >
+    <form name="contact">
+        <input type="text" id="fname" placeholder="First Name*"> <br>
+        <input type="text" id="lname" placeholder="Last Name*"> <br>
+        <input type="text" id="email" placeholder="Email*"> <br>
+        <input type="text" id="phone" placeholder="Phone*"> <br>    
+    </form> 
+    <h2>License Information</h2>
+    <form> 
+        <input type="text" id="fname" placeholder="License Number"> <br>
+        <input type="text" id="lname" placeholder="State"> <br>
+        <input type="text" id="email" placeholder="Expiration Date"> <br>
+        <input type="text" id="phone" placeholder="Birthday"> <br>
+    </form> 
+    <h2>Type of Cart Rental</h2>
+    <ul style="list-style-type: none">
+        <li>
+            <div class="formField">
+                <div style = >​​​​​​​# of People</div>
+                <select name="passengers" value="">
+                    <option value="" disabled="" selected="">​​​​​​​# of People</option>
+                    <option>2 People</option>
+					<option>4 People</option>
+					<option>6 People</option>
+                </select>
+            </div>
+        </li>
+        <li>
+            <div class="formField">
+                <div># of Carts Needed</div>
+                <select name="Carts" value="" >
+                    <option value="" disabled="" selected=""># of Carts Needed</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+                </select>
+            </div>
+        </li>
+    </ul>
+    <h2>Rental Lengths</h2>
+    <ul style="list-style-type: none">
+        <li>
+            <div class="formField">
+                <h3 role="heading" aria-level="2">Start Date</h3>
+				<div class="label placeholder"></div>
+                <input name="Start Date" type="date" value="" placeholder="Start Date"> 
+			</div>
+		</li>
+		<li>
+			<div class="formField" id="ae-formFieldLabelOptIn_cz5uiexhsz5_2">
+			<h3 role="heading" aria-level="2">End Date</h3>
+				<div class="label placeholder"></div>
+				<input name="End Date" type="date" value="" placeholder="">
+			</div>
+		</li>
+			
+	</ul>	
+	<h2>Pickup and Drop-off Information</h2>
+	<ul style="list-style-type: none" class="ulPickup row">
+		<li id="formPickupToggle row">
+		<div class="formField">
+			<div>
+				<label style="font-size: 16px;" >I need Hampton Motorsports to Pickup and Drop-Off My Carts</label>
+				<input name="Delivery Method" type="radio" value="Delivery">
+			</div>
+			<div>
+				<label style="font-size: 16px;">I will Pickup and Drop-Off at Hampton Motorsports</label>
+				<input name="Delivery Method" type="radio" value="Pick Up">
+			</div>
+			
+		</div>	
+		</li>
+		<li id="formPickupLocation">
+			<div class="formField">
+				<div class="label placeholder">Pickup Location</div>
+				<input name="Pickup Location" placeholder="Pickup Location" type="text" value="">
+			</div>
+		</li>
+		<li>
+			<p class="">*Hampton Motorsports is located at 99 Mariner Drive South Hampton New York 11968</p>
+		</li>
+		<li id="formDropLocation">
+			<div class="formField">
+				<div class="label placeholder">Drop-Off Location</div>
+				<input name="Drop-Off Location" placeholder="Drop-Off Location" type="text" value="">
+			</div>
+		</li>
+	</ul>
+	<span>&nbsp;</span>
+	<ul style="list-style-type: none" class="submitBlock" role="presentation">
+	<button onclick= "submitf()" type="button" id="button" onsubmit> Submit </button>
+</ul>
+</div>
+
+<div class='footer'>
+     <div class='footerlinks'>
+		<a class="footerLink" href='home.html'>Home</a>
+          <a class="footerLink" href='showroom.html'>Showroom</a>
+		<a class="footerLink"  href='services.html'>Services</a>
+          <a class="footerLink" href='rental.html'>Rentals</a>
+     </div>
+     <div class='footerlinks'>
+		<a class="footerLink" href='aboutus.html'>About Us</a>
+          <a class="footerLink" href='information.html'>Info</a>
+		<a class="footerLink" href='contact.html'>Contact</a>
+	</div>
+     <a href='home.html' class='logo'><img src="motorsports2.png" width="40%;" style="max-height: 250px; max-width: 250px; float: left; bottom: 0; margin-left: 10px;"></a>
+	<p style='float: right; margin-right: 10px; bottom: 0;'>938 Montauk Highway<br/>Water Mill, NY 11976<br/>Phone number: 631-287-6085</p>
+</div>
+
+<script>
+function submitf() {
+        alert("Thank you for your form. We will be in touch with you soon.");
+    }
+</script>
+</body>
+</html>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+     <link rel='stylesheet' href='HMS.css'>
+     <title>Information - Hamptons Motorsports</title>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script language = "javascript">
+          $(document).ready(function(){
+               $(".drop").hide();
+               $(".slide").hover(function(){
+                    $(".drop").show();
+                    setTimeOut(),500
+               },
+               function(){
+                    $(".drop").hide();
+               })
+               $(".drop").hover(function(){
+                    $(".drop").show();
+                    setTimeOut(),500
+               },
+               function(){
+                    $(".drop").hide();
+               })
+          })
+     </script>
+     <style>
+          .contact-number {
+              background-color: #333;
+              color: white;
+              padding: 10px 20px;
+              border-radius: 4px;
+              border-color: #FFFFFF;
+          }
+          .column1 {
+              float: left;
+              width: 40%;
+              margin-left: 10%;
+          }
+          .column2 {
+              margin-top: 0;
+              padding-top: 0;
+          }
+          table {
+              font-size: 20px;
+          }
+     </style>
+</head>
+
+<body>
+     <a href='home.html' class='logo'><img src="motorsports.png" width="20%;" style="max-height: 200px; top: 1px; margin-left: 50px;"></a>
+     <a href='https://www.instagram.com/hamptonmotorsports/?hl=en' target="_blank"><img src="insta.jpg" width="3%;" style="max-height: 50px; max-width: 50px; top: 1px;"></a>
+     <a href='https://www.facebook.com/hamptonmotorsports.southampton/' target="_blank"><img src="facebook.jpg" width="3%;" style="max-height: 50px; max-width: 50px; top: 1px;"></a>
+     <a href='home.html'><img src="vespa.png" width="15%;" style="max-height: 140px; max-width: 140px; top: 1px; float: right; margin-right: 50px;"></a>
+     <p style="margin-bottom: 40px;"></p>
+     <div class='header' id = "myHeader">
+          <div class='headerlinks'>
+               <a class='headerLink' href='home.html'>Home</a>
+               <a class='headerLink' href='showroom.html'>Showroom</a>
+               <a class='headerLink slide' href='services.html'>Services<a class='headerLink drop' href='rental.html'>Rentals</a></a>
+               <a class='headerLink' href='aboutus.html'>About Us</a>
+               <a class='headerLink' href='information.html'>Info</a>
+               <a class='headerLink' href='contact.html'>Contact</a>
+         </div>
+    </div>
+
+<h1 style="margin-left: 10%; padding-top: 10px;">INFO</h1>
+
+<div class=column1 style= "margin-bottom: 75px;">
+<h2>HOURS</h2>
+<table>
+    <tr>
+        <td class="day">Monday</td>
+        <td class="hours">CLOSED</td>
+   </tr>
+    <tr>
+        <td class="day">Tuesday</td>
+        <td class="hours">9:00 AM - 5:00 PM</td>
+   </tr>
+    <tr>
+        <td class="day">Wednesday</td>
+        <td class="hours">9:00 AM - 5:00 PM</td>
+   </tr>
+    <tr>
+        <td class="day">Thursday</td>
+        <td class="hours">9:00 AM - 5:00 PM</td>
+   </tr>
+    <tr>
+        <td class="day">Friday</td>
+        <td class="hours">9:00 AM - 5:00 PM</td>
+   </tr>
+    <tr>
+        <td class="day">Saturday</td>
+        <td class="hours">9:00 AM - 5:00 PM</td>
+   </tr>
+    <tr>
+        <td class="day">Sunday</td>
+        <td class="hours">CLOSED</td>
+   </tr>
+</table>
+<h2>Inspections Hours</h2>
+<table>
+    <tr>
+        <td class="day">Saturday</td>
+        <td class="hours">1:00 PM - 2:00 PM</td>
+   </tr>
+</table>
+</div>
+
+<div class="column2" style= "margin-bottom: 75px;">
+    <h2>MAP</h2>
+    <div>938 Montauk Hwy</div>
+    <div style= "margin-bottom: 5px;">Water Mill, NY 11976</div>
+    <iframe width="450" height="300" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ1W7dt5CV6IkRz97w0VIQyOE&key=AIzaSyDLYuWRR_Wdu9721xVnohwZktYXovHJTto"></iframe>
+</div>
+
+     <div class='footer'>
+          <div class='footerlinks'>
+               <a class="footerLink" href='home.html'>Home</a>
+               <a class="footerLink" href='showroom.html'>Showroom</a>
+               <a class="footerLink"  href='services.html'>Services</a>
+               <a class="footerLink" href='rental.html'>Rentals</a>
+         </div>
+          <div class='footerlinks'>
+               <a class="footerLink" href='aboutus.html'>About Us</a>
+               <a class="footerLink" href='information.html'>Info</a>
+               <a class="footerLink" href='contact.html'>Contact</a>
+         </div>
+          <a href='home.html' class='logo'><img src="motorsports2.png" width="40%;" style="max-height: 250px; max-width: 250px; float: left; bottom: 0; margin-left: 10px;"></a>
+          <p style='float: right; margin-right: 10px; bottom: 0;'>938 Montauk Highway<br/>Water Mill, NY 11976<br/>Phone number: 631-287-6085</p>
+    </div>
+</body>
+</html>
